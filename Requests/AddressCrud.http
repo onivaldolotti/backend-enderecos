@@ -1,0 +1,32 @@
+POST http://localhost/api/address
+Content-Type: application/json
+
+{
+    "street": "rua 6",
+    "district": "cidade 6",
+    "uf": "SP",
+    "city": "SP",
+    "cep": "17000100"
+}
+
+###
+GET http://localhost/api/address
+
+###
+GET http://localhost/api/address/17512160
+
+###
+PUT http://localhost/api/address/5
+Content-Type: application/json
+
+{
+    "street": "rua 2",
+    "district": "cidade 1",
+    "uf": "SP",
+    "city": "SP",
+    "cep": "17000000"
+}
+
+###
+DELETE http://localhost/api/address/2
+
