@@ -26,18 +26,27 @@ Before you begin, ensure you have met the following requirements:
 ```shell
     composer install
 ```
+
 4. Create a .env file based on .env.example and modify the variables as needed:
 ```shell
     cp .env.example .env
 ```
-5. Build and start the Laravel Sail containers:
+
+6. Run the migration script and select yes to create the sqlite database:
+```shell
+    php artisan migrate
+```
+
+7. Build and start the Laravel Sail containers:
 ```shell
     ./vendor/bin/sail up -d
 ``` 
-6. Access the Laravel application in your browser:
+
+8. Access the Laravel application in your browser to verify if the Laravel application is running:
 ```
     http://localhost
 ```
+
 ## Endpoints
 - Create Address
     - Endpoint: POST http://localhost/api/address
