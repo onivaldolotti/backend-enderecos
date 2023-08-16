@@ -48,6 +48,10 @@ Before you begin, ensure you have met the following requirements:
 ```
 
 ## Endpoints
+
+######  You can find all endpoints in folder Requests in the root of the application, and can use then with the REST client extension of vscode.
+
+
 - Create Address
     - Endpoint: POST http://localhost/api/address
     - Content-Type: application/json
